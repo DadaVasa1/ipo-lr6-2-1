@@ -1,8 +1,6 @@
-l = ["Ехал", "грека", "через", "Барабан", "арбалет", "абрикос"]
+string = ["Ехал", "грека", "через", "Барабан", "арбалет", "абрикос"]
 count = 0
-for i in l:
-    for j in i:
-        if j.lower() == 'б':
-            count += 1
-            break
+for i in string:
+    if "б" in i.lower():
+        count += 1
 print(count)
